@@ -11,3 +11,25 @@ After that, the code enters in a nested for loop. The outer for loop iterates ro
 At each iteration of the nested loops, the code sets the current element of the matrix to row * col. This means that each element of the matrix will be set to the product of its row and column indices.
 
 Finally, the code prints the final 2D array multilist
+
+multilist = [[0 for col in range(colNum)] for row in range(rowNum)]
+
+This line creates a 2D array called multilist, using a nested list comprehension. The outer comprehension creates a list of rowNum rows, and for each row, the inner comprehension creates a list of colNum columns. This creates a matrix of rowNum rows and colNum columns with all elements initialized to 0.
+
+This line can be read as "for each row in the range 0 to rowNum create a list of colNum elements with the value 0 and assign it to the row"
+
+for row in range(rowNum):
+
+This line initiates a for loop that will iterate rowNum times, so the loop will iterate rowNum times.
+
+for col in range(colNum):
+
+This line initiates another for loop that will iterate colNum times, so the loop will iterate colNum times.
+
+This nested for loop will iterate over every element in the multilist matrix, with the outer loop iterating over the rows, and the inner loop iterating over the columns.
+
+multilist[row][col]= row*col
+
+For each iteration of the nested loops, the code sets the current element of the matrix to row * col. This means that each element of the matrix will be set to the product of its row and column indices.
+
+So, in summary, this block of code creates a 2D array of size rowNum by colNum, and initializes each element in the array with the result of row * col using nested for loop.
