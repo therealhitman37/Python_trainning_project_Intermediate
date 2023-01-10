@@ -1,0 +1,13 @@
+This code defines a 2D array (often called a "matrix") of size rowNum by colNum, and initializes each element in the array with the result of row * col.
+
+First, the code creates an empty string input_str and uses the built-in input() function to prompt the user to enter a string. The user is expected to enter a string that contains two integers separated by a comma, such as "3, 4".
+
+Then, the code uses a list comprehension to split the input string by the comma , and converts each element in the resulting list to an integer. These integers are then assigned to the variables rowNum and colNum, respectively.
+
+The next line creates a 2D array called multilist using a nested list comprehension. The outer comprehension creates a list of rowNum rows, and for each row, the inner comprehension creates a list of colNum columns. This creates a matrix of rowNum rows and colNum columns with all elements initialized to 0.
+
+After that, the code enters in a nested for loop. The outer for loop iterates rowNum times, and for each iteration, the inner for loop iterates colNum times. This means that the nested loops iterate over every element in the multilist matrix.
+
+At each iteration of the nested loops, the code sets the current element of the matrix to row * col. This means that each element of the matrix will be set to the product of its row and column indices.
+
+Finally, the code prints the final 2D array multilist
